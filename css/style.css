@@ -8,6 +8,8 @@ body{
 	overflow-x: hidden; /*so theres no extra white space to the right that you can scroll to*/
 
 	font-family: 'Be Vietnam Pro', sans-serif;
+
+	cursor: default;
 }
 
 /*nav bar*/
