@@ -2,19 +2,26 @@
 <html>
 <head>
 	<title>hecmlineofcredit.com</title>
-	<link rel = "stylesheet" type = "text/css" href = "css/genStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="icon" href="assets/favicon.svg"/>
+	<script defer src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--something about everything looking right on ipad? iphone? idk-->
 </head>
 <body>
 	<div id="header">
 		<div id="title">HECM Line of Credit</div>
 		<div id="buttons">
-			<a id="about" href="#section2">What is HECM?</a>
-			<a id="contactMe" href="#section5">Contact Me</a>
-			<div>(555) 555-5555</div>
+			<a id="about" class="menuButton" href="#section2">What is HECM?</a>
+			<a id="contactMe" class="menuButton" href="#section5">Contact Me</a>
+			<div class="menuButton">(555) 555-5555</div>
+			<img id="menu_bars" src="assets/menu.svg">
 		</div>
+	</div>
+
+	<div id="mobile_menu">
+		<div class="menuButton">(555) 555-5555</div>
+		<a id="about_mobile" class="menuButton" onclick="openCloseMenu()" href="#explanation_anchor">What is HECM?</a>
+		<a id="contactMe_mobile" class="menuButton" onclick="openCloseMenu()" href="#contact_anchor">Contact Me</a>
 	</div>
 
 	<div id="section1">
@@ -22,7 +29,11 @@
 		<img id="house" src="assets/house.png">
 	</div>
 
-	<div id="section2">Home Equity Conversion<br>Mortgage at a Glance:</div>
+	<div id="explanation_anchor" class="anchor"></div>
+
+	<div id="section2">
+		<h1>Home Equity Conversion Mortgage at a Glance:</h1>
+	</div>
 
 	<div id="section3">
 		<div id="explanation" class="expl">Lorem donec massa sapien faucibus et molestie ac feugiat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Ac ut consequat semper viverra nam libero justo. Elementum curabitur vitae nunc sed velit dignissim. Enim tortor at auctor urna nunc id.<br><br>Erat nam at lectus urna duis convallis convallis tellus. In arcu cursus euismod quis viverra. Scelerisque felis imperdiet proin fermentum leo. Vel quam elementum pulvinar etiam non quam lacus. Sit amet nulla facilisi morbi tempus iaculis urna id. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Velit dignissim sodales ut eu. Fringilla urna porttitor rhoncus dolor purus non.</div>
@@ -33,6 +44,8 @@
 		<div id="explanation2" class="expl">Lorem donec massa sapien faucibus et molestie ac feugiat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.</div>
 	</div>
 
+	<div id="contact_anchor" class="anchor"></div>
+
 	<div id="section5">
 		<div id="contact">
 			<div id="contact_header" class="subheader">Contact Me</div>
@@ -41,6 +54,7 @@
 		</div>
 		<img id="cactus" src="assets/cactus.png">
 	</div>
+
 
 	<div id="section4">
 		<div id="about_me_text">

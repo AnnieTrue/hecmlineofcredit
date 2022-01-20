@@ -17,7 +17,7 @@ body{
 #header{
 	background-color: black;
 	width: 66vw;
-	height: 8vh;
+	height: 5vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -49,7 +49,7 @@ body{
 		font-size: 1.2vw;
 	}
 
-		#buttons a{
+		.menuButton{
 			height: 100%;
 			display: flex;
 			align-items: center;
@@ -58,23 +58,23 @@ body{
 			text-decoration: none;
 			color: white;
 		}
-		#buttons div{
-			height: 100%;
-			display: flex;
-			align-items: center;
-			padding-left: 1vw;
-			padding-right: 1vw;
-
-		}
 
 		#buttons a:hover{
 			color: black;
 			background-color: white;
 			cursor: pointer;
 		}
+		#buttons img{
+			display: none;
+		}
+
+#mobile_menu{
+	display:none;
+}
 
 /*section 1 - house pic*/
 #section1{
+	margin-top: 5vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -115,15 +115,18 @@ body{
 	background-color: #cddba0;
 	width: 100%;
 	height: 28vw;
-	text-align: center;
-
-	font-size: 5vw;
-	font-weight: bolder;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+	#section2 h1{
+		text-align: center;
+		font-size: 5vw;
+		font-weight: bolder;
+		padding-left: 17vw;
+		padding-right: 17vw;
+	}
 
 
 
@@ -243,4 +246,216 @@ body{
 footer{
 	text-align: center;
 	padding-bottom: 2vw;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                           mobile version below                             */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 992px), (orientation: portrait) {
+
+	body{
+		/*background-color: red;*/
+	}
+
+	#header{
+		height: 15vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		width: 80vw;
+	}
+		#title{
+			font-size: 4vw;
+		}
+		#buttons{
+			/*background-color: red;*/
+			justify-content: flex-end;
+
+		}
+		#buttons a{
+			display: none;
+		}
+		#buttons div{
+			display: none;
+		}
+		#buttons img{
+			display: block;
+			height: 10vw;
+		}
+
+	#mobile_menu{
+		display:none;
+		width: 100vw;
+		height: 35vw;
+		background-color: black;
+		position: fixed; /*stay as you scroll*/
+		z-index: 100; /*above everything*/
+		margin-top: 15vw;
+		flex-direction: column;
+	}
+		.menuButton{
+			font-size: 4vw;
+			justify-content: center;
+
+		}
+		#mobile_menu a:hover{
+			color: black;
+			background-color: white;
+			cursor: pointer;
+		}
+
+	#section1{
+		margin-top: 15vw;
+	}
+		#intro{
+			/*background-color: pink;*/
+			width: 80vw;
+			margin-left: 10vw;
+			font-size: 5vw;
+			/*font-weight: bolder;*/
+		}
+		#house{
+			/*background-color: blue;*/
+			height: 100%;
+			width: auto;
+
+			z-index: -10; /*under text*/
+
+			margin-left: -70vw;
+
+			opacity: .65;
+		}
+	#section2{
+		height: 40vw;
+	}
+
+		#section2 h1{
+			font-size: 7.5vw;
+			/*font-weight: bolder;*/
+			padding-left: 10vw;
+			padding-right: 10vw;
+		}
+
+	#section3{
+		padding-right: 10vw;
+		padding-left: 10vw;
+	}
+		#explanation{
+			/*background-color: skyblue;*/
+			width: 80vw;
+		}
+		.expl{
+			font-size: 4vw;
+		}
+	#section3_1{
+		/*background-color: hotpink;*/
+
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 7vw;
+/*		padding-right: 10vw;
+		padding-left: 10vw;*/
+
+	}
+		#growth{
+			height: 60vw;
+			width: 80vw;
+		}
+		#explanation2{
+			width: 80vw;
+			margin-top: 5vw;
+
+		}
+
+	#section5{
+/*		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;*/
+		height: 37vw;
+		margin-bottom: 5vw;
+	}
+		#cactus{
+			width: 100vw;
+			height: auto;
+			margin-left: -90vw;
+			z-index: -10;
+			opacity: .55;
+		}
+		#contact{
+			/*background-color: hotpink;*/
+			width: 80vw;
+			height: 37vw;
+			margin-left: 10vw;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			text-align: right;
+			padding-top: 2vw;
+		}
+			#contactInfo{
+				font-size: 4vw;
+				line-height: 1.6;
+			}
+
+			#contact p{
+				font-size: 4vw;
+				line-height: 1.6;
+				font-weight: bolder;
+			}
+
+
+	#section4{
+		/*background-color: thistle;*/
+		width: 80vw;
+		height: 90vw;
+
+		padding-left: 10vw;
+		padding-right: 10vw;
+
+		padding-bottom: 5vw;
+
+
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+		#about_me_text{
+			/*background-color: red;*/
+			height: 40vw;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+			.subheader{
+				font-size: 5.5vw;
+				font-weight: bolder;
+			}
+		#dad{
+			height: 40vw;
+		}
+
+
+	.anchor{
+		position: absolute;
+		/*background-color: red;*/
+		height: 1vw;
+		width: 1vw;
+	}
+	#contact_anchor{
+		/*15vw for menu + 45vw for section1 + 40vw for section2 + estimate of section3 (120vw) + growth image 80vw + estimate of explantion2 (10vw) - 15vw for menu to overlap*/
+		margin-top: 335vw;
+	}
+	#explanation_anchor{
+		/*15vw for menu + 45vw for section1 - 15vw for menu to overlap*/
+		margin-top: 45vw;
+	}
+
 }
