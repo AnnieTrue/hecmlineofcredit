@@ -254,7 +254,7 @@ footer{
 /*                           mobile version below                             */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 992px), (orientation: portrait) {
+@media (orientation: portrait) {
 
 	body{
 		/*background-color: red;*/
