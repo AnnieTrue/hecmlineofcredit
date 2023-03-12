@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body{
+/*	background-color: skyblue;*/
+	width: 100%;
 	margin: 0;
-	display: flex;
-	flex-direction: column;
 
-	overflow-x: hidden; /*so theres no extra white space to the right that you can scroll to*/
+
+	overflow-x: hidden;
+	 /*so theres no extra white space to the right that you can scroll to*/
 
 	font-family: 'Be Vietnam Pro', sans-serif;
 
@@ -13,29 +16,36 @@ body{
 }
 
 /*nav bar*/
+#header_bar{
+   background-color: black;
+   width: 100%;
+   height: 3vw;
+   position: fixed; 
+   /*stay as you scroll*/
+   z-index: 100; 
+   /*above everything*/
+}
 
 #header{
-	background-color: black;
-	width: 66vw;
-	height: 5vw;
+/*	background-color: red;*/
+	height: 3vw;
+	width: 100vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
-	padding-left: 17vw;
-	padding-right: 17vw;
-	position: fixed; /*stay as you scroll*/
-	z-index: 100; /*above everything*/
+/*	justify-content: space-between;*/
 }
 
 	#title{
 		color: white;
-		font-size: 2vw;
+		font-size: 1.2vw;
+		padding-left: 1vw;
+		font-family: 'Merriweather', serif;
 	}
 
 	#buttons{
 
-		/*background-color: pink;*/
+/*		background-color: pink;*/
 		height: 100%;
 		width: 32vw;
 
@@ -46,7 +56,7 @@ body{
 		justify-content: space-evenly;
 
 		color: white;
-		font-size: 1.2vw;
+		font-size: .8vw;
 	}
 
 		.menuButton{
@@ -74,93 +84,106 @@ body{
 
 /*section 1 - house pic*/
 #section1{
-	margin-top: 5vw;
+/*	background-color: rgba(0, 1, 0, .5);*/
+    padding-top: 3vw;
+
+	height: 20vw;
+	overflow: hidden;
+
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-
-	width: 100vw;
-	height: 45vw;
-
-	overflow: visible;
 
 }
+
 	#intro{
-		margin-left: 17vw;
-		width: 90vw;
-		height: 100%;
-		/*background-color: deeppink;*/
+/*				background-color: deeppink;*/
+
+		font-family: 'Merriweather', serif;
+		font-weight: bold;
+		font-size: 2.7vw;
+
+		width: 65vw;
+
 		z-index: 10; /*above house image*/
 
+		text-align: center;
 		display: flex;
-		justify-content: center;
 		align-items: center;
 
-		font-size: 3vw;
-		text-align: center;
+		margin-left: 16vw;
 	}
 	#house{
-		/*background-color: blue;*/
-		height: 100%;
-		width: auto;
+
+/*		background-color: blue;*/
+		width: 100vw;
 
 		z-index: -10; /*under text*/
 
 		margin-left: -35vw;
+
 	}
 
 /*section 2 (aka section 3 header)*/
 
 #section2{
 	background-color: #cddba0;
-	width: 100%;
-	height: 28vw;
+	width: 100vw;
+	height: 7vw;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 	#section2 h1{
+/*		background-color: red;*/
 		text-align: center;
-		font-size: 5vw;
-		font-weight: bolder;
 		padding-left: 17vw;
 		padding-right: 17vw;
+		width: 66vw;
+	}
+	.subheading{
+		font-size: 1.7vw;
+		font-weight: bold;
+		font-family: 'Merriweather', serif;
 	}
 
 
 
 /*section 3 (explanation of hecm)*/
 #section3{
-	width: 100%;
-	padding-left: 17vw;
-	padding-right: 17vw;
-	padding-top: 5vw;
-	padding-bottom: 5vw;
+/*	background-color: pink;*/
+	height: 100vw;
+	width: 100vw;
+	padding-top: 2.5vw;
+	padding-bottom: 2.5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 
 }
 
-#explanation{
-	width: 65vw;
-	padding-left: .5vw;
-	padding-right: .5vw;
+#section3_0{
+/*	background-color: cyan;*/
+	width: 66vw;
+
 }
 
 .expl{
-	font-size: 1.5vw;
+/*	background-color: greenyellow;*/
+	font-size: 1.2vw;
 	line-height: 1.6;
 }
 
 /*section 3.1 (image to the left of more explanation text)*/
 #section3_1{
-	width: 100%;
-	/*background-color: hotpink;*/
+	width: 66vw;
+/*	background-color: deeppink;*/
 
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 7vw;
 
 }
 	#growth{
@@ -168,62 +191,152 @@ body{
 		width: 30vw;
 	}
 	#explanation2{
+/*		background-color: red;*/
+		height: 20vw;
 		width: 30vw;
-		margin-left: 5vw;
+/*		margin-left: 5vw;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 
 	}
 
+/*section 3.2 the explantion continues under the photo*/
+#section3_2{
+/*	background-color: red;*/
+	width: 66vw;
+
+
+	height: 9.5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#section3_3{
+/*	background-color: yellow;*/
+	width: 66vw;
+
+	height: 24.5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#list{
+/*	background-color: pink;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 20vw;
+}
+
+/*key photo and text*/
+#section3_4{
+	width: 66vw;
+
+/*	background-color: hotpink;*/
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+/*	padding-bottom: 2.5vw;*/
+
+
+}
+	#key{
+		height: 20vw;
+	}
+	#explanation3{
+/*		background-color: red;*/
+		height: 20vw;
+		width: 30vw;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+	}
+#section3_5{
+/*	background-color: lime;*/
+	width:66vw;
+}
+
 /*section 4 (about me)*/
 #section4{
-	/*background-color: thistle;*/
+/*	background-color: thistle;*/
 	width: 66vw;
-	height: 30vw;
+	height: 29vw;
 
 	padding-left: 17vw;
 	padding-right: 17vw;
 
-	padding-bottom: 5vw;
+	padding-bottom: 2.5vw;
+	padding-top: 2.5vw;
 
 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-	#about_me_text{
-		/*background-color: red;*/
-		height: 20vw;
-
+	#about_me_box{
+/*		background-color: orange;*/
+		width: 66vw;
+		height: 40vw;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		align-items: left;
 	}
-		.subheader{
-			font-size: 2vw;
-			font-weight: bolder;
-		}
+
+	.subsection_header{
+		font-family: 'Merriweather', serif;
+	    font-size: 2vw;
+		font-weight: bold;
+	}
+	#about_me_content{
+/*		background-color: red;*/
+		height: 25vw;
+
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+/*		align-items: center;*/
+	}
+	#about_me{
+/*		background-color: green;*/
+		width: 40vw;
+	}
 	#dad{
+		margin-top: .5vw;
 		height: 20vw;
 	}
 
 /*section 5 (contact me - moved to be above section 4)*/
 #section5{
+/*	background-color: rgba(1, 0, 0, .5);*/
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin: 0;
+	height: 25vw;
+	overflow: hidden;
 }
 	#cactus{
+/*		opacity: .5;*/
 		width: 100vw;
-		height: auto;
-		margin-left: -81vw;
+/*		height: auto;*/
+/*		margin-left: -82vw;*/
+		margin-top: -9vw;
 		z-index: -10;
 	}
 	#contact{
-		/*background-color: hotpink;*/
+/*		background-color: hotpink;*/
 		width: 43vw;
-		height: 20vw;
-		margin-left: 33vw;
+		height: 15vw;
+		margin-left: -63vw;
 
 		display: flex;
 		flex-direction: column;
@@ -233,16 +346,11 @@ body{
 		padding-right: 2.5vw;
 
 		text-align: right;
-	}
-		#contactInfo{
-			font-size: 1.5vw;
-			line-height: 1.6;
-		}
 
-		#contact p{
-			font-size: 1.5vw;
-			line-height: 1.6;
-		}
+		font-size: 1.5vw;
+/*		line-height: 1.6;*/
+	}
+
 footer{
 	text-align: center;
 	padding-bottom: 2vw;
@@ -348,6 +456,7 @@ footer{
 		}
 		.expl{
 			font-size: 4vw;
+
 		}
 	#section3_1{
 		/*background-color: hotpink;*/
