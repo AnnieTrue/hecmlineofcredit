@@ -37,8 +37,9 @@ body{
 }
 
 	#title{
+		text-decoration: none;
 		color: white;
-		font-size: 1.2vw;
+		font-size: 1.3vw;
 		padding-left: 1vw;
 		font-family: 'Merriweather', serif;
 	}
@@ -84,14 +85,16 @@ body{
 
 /*section 1 - house pic*/
 #section1{
-/*	background-color: rgba(0, 1, 0, .5);*/
-    padding-top: 3vw;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.9)), url("../assets/house2.jpeg") no-repeat fixed;
+	background-size: cover;
+   padding-top: 3vw;
 
 	height: 20vw;
 	overflow: hidden;
 
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 
 }
 
@@ -100,35 +103,25 @@ body{
 
 		font-family: 'Merriweather', serif;
 		font-weight: bold;
-		font-size: 2.7vw;
+		font-size: 2.8vw;
 
-		width: 65vw;
-
-		z-index: 10; /*above house image*/
+		width: 50vw;
 
 		text-align: center;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 
-		margin-left: 16vw;
-	}
-	#house{
-
-/*		background-color: blue;*/
-		width: 100vw;
-
-		z-index: -10; /*under text*/
-
-		margin-left: -35vw;
 
 	}
+
 
 /*section 2 (aka section 3 header)*/
 
 #section2{
 	background-color: #cddba0;
 	width: 100vw;
-	height: 7vw;
+	height: 5vw;
 
 	display: flex;
 	align-items: center;
@@ -136,7 +129,7 @@ body{
 }
 	#section2 h1{
 /*		background-color: red;*/
-		text-align: center;
+/*		text-align: center;*/
 		padding-left: 17vw;
 		padding-right: 17vw;
 		width: 66vw;
@@ -207,7 +200,7 @@ body{
 	width: 66vw;
 
 
-	height: 9.5vw;
+	height: 32vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -260,6 +253,39 @@ body{
 #section3_5{
 /*	background-color: lime;*/
 	width:66vw;
+
+}
+#section3_6{
+/*	background-color: orange;*/
+	width: 66vw;
+	height: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#more_button{
+		background-color: black;
+		height: 3vw;
+		width: 10vw;
+
+		justify-self: right;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+
+/*		border: black solid 4px;*/
+
+		color: white;
+		font-size: 1vw;
+}
+#more_button:hover{
+	background-color: white;
+	color: black;
+	border: black solid 4px;
+}
+#more:hover{
+	color: black;
 }
 
 /*section 4 (about me)*/
