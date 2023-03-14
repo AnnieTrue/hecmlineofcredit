@@ -31,3 +31,45 @@
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                           mobile version below                             */
+/* -------------------------------------------------------------------------- */
+
+@media (orientation: portrait) {
+	#m_section1{
+		background: linear-gradient( rgba(255,255,255,.8), rgba(255,255,255,.1)), url("../assets/coins.jpeg") no-repeat fixed;
+		background-size: cover;
+	   	padding-top: 12vw;
+
+		height: 30vw;
+		overflow: hidden;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+	#moreInfoSec3{
+		height: 650vw;
+		margin-bottom: 1vw;
+	}
+
+	#happy{
+		width: 100%;
+		height: auto;
+	}
+
+	#clock{
+		width: 100%;
+		height: auto;
+	}
+
+	#grandkids{
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+

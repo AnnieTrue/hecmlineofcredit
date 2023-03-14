@@ -180,7 +180,7 @@ body{
 		}
 
 		.photoTextGap{
-			background-color: red;
+/*			background-color: red;*/
 			width: 7vw;
 		}
 
@@ -234,10 +234,7 @@ body{
 }
 
 	#cactus{
-/*		opacity: .5;*/
 		width: 100vw;
-/*		height: auto;*/
-/*		margin-left: -82vw;*/
 		margin-top: -9vw;
 		z-index: -10;
 	}
@@ -301,8 +298,12 @@ footer{
 
 @media (orientation: portrait) {
 
-	body{
+	html, body{
 /*		background-color: red;*/
+		overflow-x: hidden;
+	}
+	body{
+		position: relative;
 	}
 
 	#header{
@@ -355,46 +356,62 @@ footer{
 	#section1{
 		padding-top: 12vw;
 		background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.9)), url("../assets/house2.jpeg") no-repeat fixed;
-		height: 30vw;
+		background-size: 100vw auto;
+		height: 40vw;
 	}
 		#intro{
 /*			background-color: pink;*/
-			width: 80vw;
-			font-size: 4.7vw;
+
+	
+
+
+			width: 70vw;
+			font-size: 6vw;
 		}
 
 	#section2{
-		height: 8vw;
+		height: 15vw;
+/*		align-items: flex-start;*/
+		justify-content: initial;
 
 	}
 
 		#section2 h1{
-			font-size: 4vw;
+			font-size: 4.5vw;
+			width: 100%;
 /*			background-color: red;*/
+			padding-left: 5vw;
+			padding-right: 0;
 		}
 
 	.section3{
-		padding-right: 10vw;
-		padding-left: 10vw;
+		padding-right: 5vw;
+		padding-left: 5vw;
 
 /*		background-color: pink;*/
-		height: 410vw;
+		height: 475vw;
 
-		font-size: 3vw;
+		font-size: 3.5vw;
 		line-height: 1.6;
+		padding-bottom: 5vw;
 	}
 		h1{
-			font-size: 4vw;
+			font-size: 4.5vw;
 		}
 
 		.photoText{
 			flex-direction: column;
 		}
-/*
-		.photoText img{
-			width: 100%;
-			height: auto;
-		}*/
+
+		.photoTextGap{
+
+			height: 3vw;
+		}
+
+		.photoText h1{
+			margin-top: 2vw;
+			margin-bottom: 2vw;
+		}
 
 
 		#growth{
@@ -407,40 +424,30 @@ footer{
 		}
 
 		#more_button{
-/*			margin-top: 3vw;
-			margin-bottom: 1vw;*/
 
 			height: 6vw;
 			width: 30vw;
-			font-size: 3.5vw;
+			font-size: 4vw;
 			padding: 1vw;
 
 			
 		}
 
 	#contact_me{
-/*		display: flex;
-		flex-direction: row;
-		align-items: center;
-		margin: 0;*/
 		height: 37vw;
 		margin-bottom: 5vw;
 	}
 		#cactus{
-/*			width: 100vw;
-			height: auto;
-			margin-left: -90vw;
-			z-index: -10;
-			opacity: .55;*/
+			margin-top: 0vw;
 		}
 		#contact{
 /*			background-color: hotpink;*/
 
-			width: 60vw;
+			width: 70vw;
 			margin-left: -72vw;
 
-			font-size: 3vw;
-			height: 25vw;
+			font-size: 3.5vw;
+			height: 35vw;
 
 		}
 
@@ -451,14 +458,14 @@ footer{
 
 #about_me_box{
 /*	background-color: red;*/
-	height: 120vw;
-	width:80vw;
+	height: 130vw;
+	width:90vw;
 
-	font-size: 3vw;
+	font-size: 3.5vw;
 
 	margin-bottom: 10vw;
 
-	padding-left:10vw;
+	padding-left:5vw;
 
 
 	display: flex;
@@ -468,14 +475,17 @@ footer{
 }
 	#about_me_box h1{
 /*		background-color: green;*/
-		padding:0;
+		margin: 0;
+	}
+
+	#about_me_box .photoText img{
+		margin-bottom: 3vw;
 	}
 
 	#dad{
 		width: 40vw;
 		height: auto;
 		align-self: flex-start;
-		margin-top: 5vw;
 		margin-bottom: 5vw;
 	}
 
@@ -491,7 +501,7 @@ footer{
 	}
 
 	footer{
-		font-size: 2vw;
+		font-size: 2.5vw;
 	}
 
 
