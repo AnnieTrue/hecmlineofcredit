@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/*variable for the font size of general text on mobile (cause i keep changing it*/
+/*	used like: var(--mobilefs)*/
+:root{
+	--mobilefs: 4vw; 
+}
 
 body{
 /*	background-color: skyblue;*/
@@ -389,9 +394,11 @@ footer{
 		padding-left: 5vw;
 
 /*		background-color: pink;*/
-		height: 475vw;
+		height: 530vw;
+		margin-top: 3vw;
+		margin-bottom: 3vw;
 
-		font-size: 3.5vw;
+		font-size: var(--mobilefs);
 		line-height: 1.6;
 		padding-bottom: 5vw;
 	}
@@ -434,20 +441,21 @@ footer{
 		}
 
 	#contact_me{
-		height: 37vw;
+		height: 40vw;
 		margin-bottom: 5vw;
 	}
 		#cactus{
-			margin-top: 0vw;
+			margin-top: -3vw;
+
 		}
 		#contact{
 /*			background-color: hotpink;*/
 
-			width: 70vw;
-			margin-left: -72vw;
+			width: 100vw;
+			margin-left: -100vw;
 
-			font-size: 3.5vw;
-			height: 35vw;
+			font-size: var(--mobilefs);
+			height: 40vw;
 
 		}
 
@@ -458,10 +466,10 @@ footer{
 
 #about_me_box{
 /*	background-color: red;*/
-	height: 130vw;
+	height: 155vw;
 	width:90vw;
 
-	font-size: 3.5vw;
+	font-size: var(--mobilefs);
 
 	margin-bottom: 10vw;
 
