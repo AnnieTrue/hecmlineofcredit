@@ -13,7 +13,8 @@
 }
 
 #moreInfoSec3{
-	height: 120vw;
+/*	background-color: pink;*/
+	height: 130vw;
 	margin-bottom: 1vw;
 }
 
@@ -55,7 +56,8 @@
 	}
 
 	#moreInfoSec3{
-		height: 775vw;
+/*		background-color: pink;*/
+		height: 815vw;
 		margin-bottom: 4vw;
 		margin-top: 4vw;
 	}

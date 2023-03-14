@@ -144,7 +144,7 @@ body{
 /*section 3 (explanation of hecm)*/
 .section3{
 /*	background-color: pink;*/
-	height: 98vw;
+	height: 109vw;
 /*	width: 100%;*/
 	padding-left: 17vw;
 	padding-right: 17vw;
@@ -186,7 +186,7 @@ body{
 
 		.photoTextGap{
 /*			background-color: red;*/
-			width: 7vw;
+			width: 8vw;
 		}
 
 		#growth{
@@ -394,7 +394,7 @@ footer{
 		padding-left: 5vw;
 
 /*		background-color: pink;*/
-		height: 530vw;
+		height: 630vw;
 		margin-top: 3vw;
 		margin-bottom: 3vw;
 
@@ -404,10 +404,13 @@ footer{
 	}
 		h1{
 			font-size: 4.5vw;
+			padding-bottom: 5vw;
 		}
 
 		.photoText{
 			flex-direction: column;
+			padding-bottom: 5vw;
+			padding-top: 5vw;
 		}
 
 		.photoTextGap{
