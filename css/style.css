@@ -18,8 +18,8 @@ body{
 /*nav bar*/
 #header_bar{
    background-color: black;
-   width: 100%;
-   height: 3vw;
+   width: 100vw;
+/*   height: 3vw;*/
    position: fixed; 
    /*stay as you scroll*/
    z-index: 100; 
@@ -29,11 +29,11 @@ body{
 #header{
 /*	background-color: red;*/
 	height: 3vw;
-	width: 100vw;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-/*	justify-content: space-between;*/
+
 }
 
 	#title{
@@ -129,225 +129,101 @@ body{
 }
 	#section2 h1{
 /*		background-color: red;*/
-/*		text-align: center;*/
 		padding-left: 17vw;
 		padding-right: 17vw;
 		width: 66vw;
-	}
-	.subheading{
-		font-size: 1.7vw;
-		font-weight: bold;
-		font-family: 'Merriweather', serif;
 	}
 
 
 
 /*section 3 (explanation of hecm)*/
-#section3{
+.section3{
 /*	background-color: pink;*/
-	height: 100vw;
-	width: 100vw;
-	padding-top: 2.5vw;
-	padding-bottom: 2.5vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-
-}
-
-#section3_0{
-/*	background-color: cyan;*/
-	width: 66vw;
-
-}
-
-.expl{
-/*	background-color: greenyellow;*/
-	font-size: 1.2vw;
-	line-height: 1.6;
-}
-
-/*section 3.1 (image to the left of more explanation text)*/
-#section3_1{
-	width: 66vw;
-/*	background-color: deeppink;*/
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-
-}
-	#growth{
-		height: 20vw;
-		width: 30vw;
-	}
-	#explanation2{
-/*		background-color: red;*/
-		height: 20vw;
-		width: 30vw;
-/*		margin-left: 5vw;*/
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-
-	}
-
-/*section 3.2 the explantion continues under the photo*/
-#section3_2{
-/*	background-color: red;*/
-	width: 66vw;
-
-
-	height: 32vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-#section3_3{
-/*	background-color: yellow;*/
-	width: 66vw;
-
-	height: 24.5vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-#list{
-/*	background-color: pink;*/
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 20vw;
-}
-
-/*key photo and text*/
-#section3_4{
-	width: 66vw;
-
-/*	background-color: hotpink;*/
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-/*	padding-bottom: 2.5vw;*/
-
-
-}
-	#key{
-		height: 20vw;
-	}
-	#explanation3{
-/*		background-color: red;*/
-		height: 20vw;
-		width: 30vw;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-
-	}
-#section3_5{
-/*	background-color: lime;*/
-	width:66vw;
-
-}
-#section3_6{
-/*	background-color: orange;*/
-	width: 66vw;
-	height: 5vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-#more_button{
-		background-color: black;
-		height: 3vw;
-		width: 10vw;
-
-		justify-self: right;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-/*		justify-content: center;*/
-
-/*		border: black solid 4px;*/
-
-		color: white;
-		font-size: 1vw;
-}
-#more_button:hover{
-	background-color: white;
-	color: black;
-	border: black solid 4px;
-}
-#more{
-	width:100%;
-	justify-content: center;
-/*	background-color: orange;*/
-}
-
-#more:hover{
-	color: black;
-}
-
-/*section 4 (about me)*/
-#section4{
-/*	background-color: thistle;*/
-	width: 66vw;
-	height: 29vw;
-
+	height: 98vw;
+/*	width: 100%;*/
 	padding-left: 17vw;
 	padding-right: 17vw;
 
-	padding-bottom: 2.5vw;
 	padding-top: 2.5vw;
-
+	padding-bottom: 2.5vw;
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+/*	align-items: center;*/
+
+	font-size: 1.2vw;
+	line-height: 1.6;
+
 }
-	#about_me_box{
-/*		background-color: orange;*/
-		width: 66vw;
-		height: 40vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: left;
-	}
-
-	.subsection_header{
-		font-family: 'Merriweather', serif;
-	    font-size: 2vw;
+	h1{
+/*		background-color: hotpink;*/
+		margin: 0;
+		font-size: 1.7vw;
 		font-weight: bold;
+		font-family: 'Merriweather', serif;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
 	}
-	#about_me_content{
-/*		background-color: red;*/
-		height: 25vw;
 
-
+	.photoText {
+/*		background-color: yellowgreen;*/
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-/*		align-items: center;*/
-	}
-	#about_me{
-/*		background-color: green;*/
-		width: 40vw;
-	}
-	#dad{
-		margin-top: .5vw;
-		height: 20vw;
+		align-items: center;
 	}
 
+		.photoText img{
+			margin-top: 2vw;
+			margin-bottom: 2vw;
+		}
+
+		.photoTextGap{
+			background-color: red;
+			width: 7vw;
+		}
+
+		#growth{
+			height: 20vw;
+			width: 30vw;
+		}
+
+		#key{
+			height: 20vw;
+		}
+
+	#more_button{
+			align-self: center;
+
+			margin-top: 3vw;
+			margin-bottom: 1vw;
+
+			background-color: black;
+			height: 3vw;
+			width: 10vw;
+			border: black solid 4px;
+			font-size: 1vw;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+	}
+	#more_button a{
+		text-decoration: none;
+		color: white;
+	}
+	#more_button:hover a{
+		color: black;
+	}
+	#more_button:hover{
+		background-color: white;
+	}
+
+
 /*section 5 (contact me - moved to be above section 4)*/
-#section5{
+#contact_me{
 /*	background-color: rgba(1, 0, 0, .5);*/
 	display: flex;
 	flex-direction: row;
@@ -356,6 +232,7 @@ body{
 	height: 25vw;
 	overflow: hidden;
 }
+
 	#cactus{
 /*		opacity: .5;*/
 		width: 100vw;
@@ -379,12 +256,40 @@ body{
 
 		text-align: right;
 
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 /*		line-height: 1.6;*/
 	}
 
+
+
+
+#about_me_box{
+/*	background-color: orange;*/
+	padding: 2.5vw 17vw;
+	height: 25vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	font-size: 1.2vw;
+	line-height: 1.6;
+}
+
+	#about_me_box h1{
+/*		background-color: green;*/
+		padding:0;
+	}
+
+	#dad{
+		height: 20vw;
+	}
+
+
+
 footer{
 	text-align: center;
+	padding-top: 2vw;
 	padding-bottom: 2vw;
 }
 
@@ -397,20 +302,21 @@ footer{
 @media (orientation: portrait) {
 
 	body{
-		/*background-color: red;*/
+/*		background-color: red;*/
 	}
 
 	#header{
-		height: 15vw;
-		padding-left: 10vw;
-		padding-right: 10vw;
-		width: 80vw;
+/*		background-color: red;*/
+		height: 12vw;
+		padding-left: 8vw;
+		padding-right: 8vw;
+		justify-content: space-between;
 	}
 		#title{
 			font-size: 4vw;
 		}
 		#buttons{
-			/*background-color: red;*/
+/*			background-color: red;*/
 			justify-content: flex-end;
 
 		}
@@ -432,7 +338,7 @@ footer{
 		background-color: black;
 		position: fixed; /*stay as you scroll*/
 		z-index: 100; /*above everything*/
-		margin-top: 15vw;
+		margin-top: 12vw;
 		flex-direction: column;
 	}
 		.menuButton{
@@ -447,71 +353,72 @@ footer{
 		}
 
 	#section1{
-		margin-top: 15vw;
+		padding-top: 12vw;
+		background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.9)), url("../assets/house2.jpeg") no-repeat fixed;
+		height: 30vw;
 	}
 		#intro{
-			/*background-color: pink;*/
+/*			background-color: pink;*/
 			width: 80vw;
-			margin-left: 10vw;
-			font-size: 5vw;
-			/*font-weight: bolder;*/
+			font-size: 4.7vw;
 		}
-		#house{
-			/*background-color: blue;*/
-			height: 100%;
-			width: auto;
 
-			z-index: -10; /*under text*/
-
-			margin-left: -70vw;
-
-			opacity: .65;
-		}
 	#section2{
-		height: 40vw;
+		height: 8vw;
+
 	}
 
 		#section2 h1{
-			font-size: 7.5vw;
-			/*font-weight: bolder;*/
-			padding-left: 10vw;
-			padding-right: 10vw;
+			font-size: 4vw;
+/*			background-color: red;*/
 		}
 
-	#section3{
+	.section3{
 		padding-right: 10vw;
 		padding-left: 10vw;
+
+/*		background-color: pink;*/
+		height: 410vw;
+
+		font-size: 3vw;
+		line-height: 1.6;
 	}
-		#explanation{
-			/*background-color: skyblue;*/
-			width: 80vw;
-		}
-		.expl{
+		h1{
 			font-size: 4vw;
-
 		}
-	#section3_1{
-		/*background-color: hotpink;*/
 
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: 7vw;
-/*		padding-right: 10vw;
-		padding-left: 10vw;*/
+		.photoText{
+			flex-direction: column;
+		}
+/*
+		.photoText img{
+			width: 100%;
+			height: auto;
+		}*/
 
-	}
+
 		#growth{
-			height: 60vw;
-			width: 80vw;
+			width: 100%;
+			height: auto;
 		}
-		#explanation2{
-			width: 80vw;
-			margin-top: 5vw;
-
+		#key{
+			width: 100%;
+			height: auto;
 		}
 
-	#section5{
+		#more_button{
+/*			margin-top: 3vw;
+			margin-bottom: 1vw;*/
+
+			height: 6vw;
+			width: 30vw;
+			font-size: 3.5vw;
+			padding: 1vw;
+
+			
+		}
+
+	#contact_me{
 /*		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -520,83 +427,72 @@ footer{
 		margin-bottom: 5vw;
 	}
 		#cactus{
-			width: 100vw;
+/*			width: 100vw;
 			height: auto;
 			margin-left: -90vw;
 			z-index: -10;
-			opacity: .55;
+			opacity: .55;*/
 		}
 		#contact{
-			/*background-color: hotpink;*/
-			width: 80vw;
-			height: 37vw;
-			margin-left: 10vw;
+/*			background-color: hotpink;*/
 
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			width: 60vw;
+			margin-left: -72vw;
 
-			text-align: right;
-			padding-top: 2vw;
+			font-size: 3vw;
+			height: 25vw;
+
 		}
-			#contactInfo{
-				font-size: 4vw;
-				line-height: 1.6;
-			}
-
-			#contact p{
-				font-size: 3.5vw;
-				line-height: 1.6;
-				font-weight: bolder;
-			}
 
 
-	#section4{
-		/*background-color: thistle;*/
-		width: 80vw;
-		height: 90vw;
-
-		padding-left: 10vw;
-		padding-right: 10vw;
-
-		padding-bottom: 5vw;
 
 
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		justify-content: space-evenly;
+
+
+#about_me_box{
+/*	background-color: red;*/
+	height: 120vw;
+	width:80vw;
+
+	font-size: 3vw;
+
+	margin-bottom: 10vw;
+
+	padding-left:10vw;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+}
+	#about_me_box h1{
+/*		background-color: green;*/
+		padding:0;
 	}
-		#about_me_text{
-			/*background-color: red;*/
-			height: 40vw;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-		}
-			.subheader{
-				font-size: 5.5vw;
-				font-weight: bolder;
-			}
-		#dad{
-			height: 40vw;
-		}
+	#dad{
+		width: 40vw;
+		height: auto;
+		align-self: flex-start;
+		margin-top: 5vw;
+		margin-bottom: 5vw;
+	}
 
 
 	.anchor{
 		position: absolute;
-		/*background-color: red;*/
+/*		background-color: red;*/
 		height: 1vw;
 		width: 1vw;
 	}
 	#contact_anchor{
-		/*15vw for menu + 45vw for section1 + 40vw for section2 + estimate of section3 (120vw) + growth image 80vw + estimate of explantion2 (10vw) - 15vw for menu to overlap*/
-		margin-top: 335vw;
+		margin-top: 185vw;
 	}
-	#explanation_anchor{
-		/*15vw for menu + 45vw for section1 - 15vw for menu to overlap*/
-		margin-top: 45vw;
+
+	footer{
+		font-size: 2vw;
 	}
+
 
 }

@@ -3,7 +3,7 @@
 	background-size: cover;
    padding-top: 3vw;
 
-	height: 20vw;
+	height: 15vw;
 	overflow: hidden;
 
 	display: flex;
@@ -12,116 +12,22 @@
 
 }
 
-#m_section3{
-	/*	background-color: pink;*/
-	height: 125vw;
-	width: 100vw;
-	padding-top: 2.5vw;
-	padding-bottom: 2.5vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+#moreInfoSec3{
+	height: 120vw;
+	margin-bottom: 1vw;
 }
 
-#m_section3_4{
-	width: 66vw;
-
-/*	background-color: hotpink;*/
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#m_explanation3{
-/*			background-color: red;*/
-	height: 22vw;
-	width: 32vw;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
 
 #happy{
 	height: 22vw;
 }
 
-#m_section3_2{
-/*	background-color: red;*/
-	width: 66vw;
-
-
-	height: 10.5vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-#m_section3_3{
-/*	background-color: blue;*/
-	width: 66vw;
-
-
-	height: 20vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-
-}
-#m_section3_3 div{
-	width: 33vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-#m_section3_3 img{
+#clock{
 	height: 20vw;
 }
 
-
-#m_section3_3_1{
-/*	background-color: red;*/
-	width: 66vw;
-
-
-	height: 20vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-
-#m_section3_1{
-		width: 66vw;
-height: 24vw;
-/*	background-color: deeppink;*/
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#m_section3_1 div{
-/*	background-color: red;*/
-	height: 21vw;
-	width: 36vw;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-#m_section3_1 img{
+#grandkids{
 	height: 22vw;
 }
 
 
-#m_section3_5{
-	width: 66vw;
-	height: 7vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
